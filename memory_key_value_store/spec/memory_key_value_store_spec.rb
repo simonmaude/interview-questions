@@ -1,4 +1,5 @@
 require 'rspec'
+require_relative '../memory_key_value_store'
 
 describe "MemoryKeyValueStore" do
   describe "#get" do
@@ -28,6 +29,12 @@ describe "MemoryKeyValueStore" do
   end
 
   describe "#keys" do
-    it "returns all keys matching regex pattern"
+    context "when no regex pattern is passed" do
+      it "returns all keys"
+    end
+
+    context "when a regex pattern is passed" do
+      it "returns all keys matching regex pattern"
+    end
   end
 end
