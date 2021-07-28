@@ -19,12 +19,12 @@ describe "MemoryKeyValueStore" do
   describe "#set" do
     context "when they key does not hold a value" do
       it "sets the key to hold the string value"
-      it "returns OK"
+      it "returns the string 'OK'"
     end
 
     context "when they key already holds a value" do
       it "sets the key to hold the string value"
-      it "returns OK"
+      it "returns the string 'OK'"
     end
   end
 
