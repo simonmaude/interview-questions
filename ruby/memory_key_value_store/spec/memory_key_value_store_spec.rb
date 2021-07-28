@@ -14,6 +14,10 @@ describe "MemoryKeyValueStore" do
     context "with a non-string value" do
       it "returns an error"
     end
+
+    context "with a value with an expired ttl" do
+      it "returns the special value nil"
+    end
   end
 
   describe "#set" do
@@ -23,6 +27,11 @@ describe "MemoryKeyValueStore" do
     end
 
     context "when they key already holds a value" do
+      it "sets the key to hold the string value"
+      it "returns the string 'OK'"
+    end
+
+    context "when passed an optional 'ttl' parameter in seconds" do
       it "sets the key to hold the string value"
       it "returns the string 'OK'"
     end
