@@ -22,6 +22,10 @@ Will output the specification as pending tests. You'll see output such as:
 
 This translates to: "instance method 'get' on the MemoryKeyValueStore class ...".
 
+### Checkout a new branch
+
+Create a new branch with your name, (eg. `firstname-lastname`).
+
 ### Write implementation
 
 Edit the file `memory_key_value_store.rb` to implement the functionality to satisfy the specification.
