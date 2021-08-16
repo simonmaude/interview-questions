@@ -15,6 +15,10 @@ class TestMemoryKeyValueStoreGetMethod(unittest.TestCase):
         # returns an error
         pass
 
+    def test_get_with_expired_ttl(self):
+        # returns the value null
+        pass
+
 
 class TestMemoryKeyValueStoreSetMethod(unittest.TestCase):
     def test_set_no_value(self):
@@ -23,6 +27,11 @@ class TestMemoryKeyValueStoreSetMethod(unittest.TestCase):
         pass
 
     def test_set_key_with_value(self):
+        # sets the key hold the string value
+        # returns the string OK
+        pass
+
+    def test_set_key_with_optional_ttl_parameter(self):
         # sets the key hold the string value
         # returns the string OK
         pass
