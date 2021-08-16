@@ -1,4 +1,5 @@
 import unittest
+from memory_key_value_store import MemoryKeyValueStore
 
 
 class TestMemoryKeyValueStoreGetMethod(unittest.TestCase):
