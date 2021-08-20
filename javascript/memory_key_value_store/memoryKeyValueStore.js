@@ -1,17 +1,16 @@
-class MemoryKeyValueStore {
-  constructor () {
-  }
-
-  get () {
-    return null
-  }
-
-  set () {
-    return null
-  }
-
-  keys () {
-    return null
+function MemoryKeyValueStore() {
+  return{
+    get () {
+      return null;
+    },
+    
+    set () {
+      return null;
+    },
+    
+    keys () {
+      return null;
+    }
   }
 }
 
