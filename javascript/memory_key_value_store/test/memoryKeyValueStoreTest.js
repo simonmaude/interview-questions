@@ -2,8 +2,9 @@ const MemoryKeyValueStore = require('../memoryKeyValueStore.js')
 const expect = require('chai').expect
 
 describe('MemoryKeyValueStore', function () {
+  let storage = null
   beforeEach(function createMkvs () {
-    this.currentTest.mkvs = new MemoryKeyValueStore()
+    storage = MemoryKeyValueStore()
   })
   describe('#get()', function () {
     context('with a matching key', function () {
